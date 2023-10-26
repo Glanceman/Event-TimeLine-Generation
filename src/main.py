@@ -1,16 +1,24 @@
-# This is a sample Python script.
+from classes.CrawlerFactory import CrawlerFactory
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+KEYWORD = "war"
+
 
 def main():
-    print("Test")
-    return 0
+    #todo retrieve information from social media
+    crawler = CrawlerFactory.createRedditCrawler(KEYWORD)
+    crawler.crawl()
 
+    # todo integrate data from different sources
+    
+    # todo process the data (remove overlapped)
+
+    # todo present the data
+
+    return 0
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    print(__package__)
     main()
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
