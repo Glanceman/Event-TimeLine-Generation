@@ -1,0 +1,4 @@
+pyinstaller
+numpy
+beautifulsoup4
+requests
