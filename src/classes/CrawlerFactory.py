@@ -1,7 +1,8 @@
-from classes.RedditCrawler import RedditCrawler
+from classes.SouthMorningCrawler import SouthMorningCrawler
 
 class CrawlerFactory:
+
     @staticmethod
-    def createRedditCrawler(keyword:str) ->RedditCrawler:
-        crawler = RedditCrawler(keyword)
+    def createSouthMorningCrawler(keyword:str) ->SouthMorningCrawler:
+        crawler = SouthMorningCrawler(keyword)
         return crawler

@@ -6,7 +6,7 @@ KEYWORD = "war"
 
 def main():
     #todo retrieve information from social media
-    crawler = CrawlerFactory.createRedditCrawler(KEYWORD)
+    crawler = CrawlerFactory.createSouthMorningCrawler(KEYWORD)
     crawler.crawl()
 
     # todo integrate data from different sources
@@ -20,5 +20,5 @@ def main():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print(__package__)
+    print(f"package name : { __package__}" )
     main()

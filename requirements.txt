@@ -2,3 +2,4 @@ pyinstaller
 numpy
 beautifulsoup4
 requests
+seleniumm
