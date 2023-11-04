@@ -1,14 +1,16 @@
+from numpy import ndarray
 class MediaCrawler:
-    def __init__(self,keyword:str) -> None:
+    def __init__(self,defaultKeyword:str) -> None:
         self.link:str=""
-        self.keyword:str=keyword
+        self.keyword:str=defaultKeyword
         pass
     
-    def crawl(self)->None:
+    def setKeyword(self,word:str)->None:
+        self.keyword=word
+
+    def crawl(self)->ndarray:
         pass
 
-    def getData(self) -> list:
-        pass
 
 
 
