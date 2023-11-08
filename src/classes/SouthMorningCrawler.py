@@ -3,9 +3,6 @@ from classes.MediaCrawler import MediaCrawler
 import requests as r
 from bs4 import BeautifulSoup as bs
 from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
 import numpy as np
 
 
@@ -14,7 +11,7 @@ class SouthMorningCrawler(MediaCrawler):
     def __init__(self, defaultKeyword: str) -> None:
         super().__init__(defaultKeyword)
         self.link = "https://www.scmp.com/search/"
-        self.scrollCount = 10
+        self.scrollCount = 25
 
     def crawl(self) -> np.ndarray:
         options = webdriver.EdgeOptions()
