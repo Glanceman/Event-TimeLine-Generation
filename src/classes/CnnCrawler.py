@@ -15,7 +15,7 @@ class CnnCrawler(MediaCrawler):
             'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
         }
         result = np.array([])
-        for i in range(1, 268):
+        for i in range(1, 151):
             param={
                 'q': 'israel gaza',
                 'size' : '10',
