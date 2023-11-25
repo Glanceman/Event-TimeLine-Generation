@@ -13,6 +13,7 @@ def mining():
         crawlers=[]
         crawlers.append(CrawlerFactory.createSouthMorningCrawler(KEYWORDS[0]))
         crawlers.append(CrawlerFactory.createCnnCraler("israel gaza"))
+        crawlers.append(CrawlerFactory.createAbcCrawler(KEYWORDS[0]))
         # data mining with each keyword
         finalResult = np.array([])
         for keyword in KEYWORDS:
