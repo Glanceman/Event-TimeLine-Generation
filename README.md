@@ -8,4 +8,11 @@ python 3.11
 
 
 ## Launch
-> python src/main.py
+> run the main.iypnb
+
+## Example
+
+Keyword: israel
+
+Result:
+![Result Image](/src/image.svg)
