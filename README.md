@@ -10,6 +10,11 @@ python 3.11
 ## Launch
 > run the main.iypnb
 
+Perform data collection
+
+> python src/mining.py
+
+
 ## Example
 
 Keyword: israel
